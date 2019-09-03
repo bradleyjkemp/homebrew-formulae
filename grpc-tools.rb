@@ -2,16 +2,16 @@
 class GrpcTools < Formula
   desc "A suite of gRPC debugging tools. Like Fiddler/Charles but for gRPC."
   homepage "https://github.com/bradleyjkemp/grpc-tools"
-  version "0.2.2"
+  version "0.2.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bradleyjkemp/grpc-tools/releases/download/v0.2.2/grpc-tools_0.2.2_macOS_amd64.zip"
-    sha256 "f1278f6c16436518d7fa3a668b35455ce4aa28ab9fef3da9d786c0e419eaea9f"
+    url "https://github.com/bradleyjkemp/grpc-tools/releases/download/v0.2.3/grpc-tools_0.2.3_macOS_amd64.zip"
+    sha256 "72f482feedf93051d1084c4b39667d77120aae2db12cbd9d2c8a42c336d9d5e0"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bradleyjkemp/grpc-tools/releases/download/v0.2.2/grpc-tools_0.2.2_Linux_amd64.zip"
-      sha256 "210e7ec2136f035a162e382ada5cfe497b43ae993ea716459c49429439cee9b0"
+      url "https://github.com/bradleyjkemp/grpc-tools/releases/download/v0.2.3/grpc-tools_0.2.3_Linux_amd64.zip"
+      sha256 "f94482239b61a2f3ab5e30f393e72ae09821cd04f01ef600bd92b607312fc94b"
     end
   end
 
