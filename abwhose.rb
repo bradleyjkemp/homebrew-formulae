@@ -2,16 +2,16 @@
 class Abwhose < Formula
   desc "The simplest way to find how to report abusive domains."
   homepage "https://github.com/bradleyjkemp/abwhose"
-  version "0.1.8"
+  version "0.1.9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bradleyjkemp/abwhose/releases/download/v0.1.8/abwhose_0.1.8_macOS_amd64.zip"
-    sha256 "b4d7474fe587e378c24c9b6d63a6330588435fbe246415f8bd5aac18d918be60"
+    url "https://github.com/bradleyjkemp/abwhose/releases/download/v0.1.9/abwhose_0.1.9_macOS_amd64.zip"
+    sha256 "ae8fca04215d6e09d5e3c5486c2d3b537ab9065e8f2f529e24ecfb64a4bc224f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bradleyjkemp/abwhose/releases/download/v0.1.8/abwhose_0.1.8_Linux_amd64.zip"
-      sha256 "915c1d078f7e74de0eb851170b36996cba80ef22dc7dd2e87cf74bd602e397cc"
+      url "https://github.com/bradleyjkemp/abwhose/releases/download/v0.1.9/abwhose_0.1.9_Linux_amd64.zip"
+      sha256 "5955505379bd07d67733e12461abc95a9285e91e39e671ff45650716c64af595"
     end
   end
 
