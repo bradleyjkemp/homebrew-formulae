@@ -2,16 +2,16 @@
 class Sigmafmt < Formula
   desc "An opinionated formatter/linter for Sigma rules"
   homepage "https://github.com/bradleyjkemp/sigmafmt"
-  version "0.1.1"
+  version "0.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bradleyjkemp/sigmafmt/releases/download/v0.1.1/sigmafmt_0.1.1_macOS_amd64.zip"
-    sha256 "b121d71dcd426a5ed86cf0c771677e95f92e39d2b325f8f3980b6057ef1ca70e"
+    url "https://github.com/bradleyjkemp/sigmafmt/releases/download/v0.1.2/sigmafmt_0.1.2_macOS_amd64.zip"
+    sha256 "62a84b2f903f4389564ddfad7801a0e858fbd9d189fd7e89f67278ef02457f5d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bradleyjkemp/sigmafmt/releases/download/v0.1.1/sigmafmt_0.1.1_Linux_amd64.zip"
-      sha256 "f7c32a87d40d95dcad9bb5380c0a4759a571d9a526852379be43da29c1833dc1"
+      url "https://github.com/bradleyjkemp/sigmafmt/releases/download/v0.1.2/sigmafmt_0.1.2_Linux_amd64.zip"
+      sha256 "d5b2893f5f0d4218a711bae66813a9010b308fd2039699c056980df46122dedf"
     end
   end
 
