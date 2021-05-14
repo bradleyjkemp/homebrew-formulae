@@ -5,19 +5,19 @@
 class SigmaGo < Formula
   desc "A Go implementation and parser of Sigma rules."
   homepage "https://github.com/bradleyjkemp/sigma-go"
-  version "0.2.3"
+  version "0.2.4"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://github.com/bradleyjkemp/sigma-go/releases/download/v0.2.3/sigma-go_0.2.3_macOS_amd64.zip"
-    sha256 "d50a30598db44ca0abd45d58d35d96a5d4d820eefc88e236817a8f9b1daa502b"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/bradleyjkemp/sigma-go/releases/download/v0.2.4/sigma-go_0.2.4_macOS_amd64.zip"
+    sha256 "6324b30118110c00af532fc97dfdf3619fcbe8bc71dad04d9fad8f4a130d3a82"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/bradleyjkemp/sigma-go/releases/download/v0.2.3/sigma-go_0.2.3_Linux_amd64.zip"
-    sha256 "5ab725603a94c478a3cb2eda7ae1d45d27a2de4d081fdc7cdf6a66f578dbc8b5"
+    url "https://github.com/bradleyjkemp/sigma-go/releases/download/v0.2.4/sigma-go_0.2.4_Linux_amd64.zip"
+    sha256 "653e152218124ff0918930e0bac078a0663a21031b6841f886afead4c1693526"
   end
 
   def install
-    bin.install "sigmac"
+    bin.install "sigma-go"
   end
 end
