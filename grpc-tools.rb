@@ -3,7 +3,6 @@ class GrpcTools < Formula
   desc "A suite of gRPC debugging tools. Like Fiddler/Charles but for gRPC."
   homepage "https://github.com/bradleyjkemp/grpc-tools"
   version "0.2.6"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/bradleyjkemp/grpc-tools/releases/download/v0.2.6/grpc-tools_0.2.6_macOS_amd64.zip"
